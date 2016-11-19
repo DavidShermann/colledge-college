@@ -22,7 +22,7 @@ int save_data(struct *ptr, char type, int size_of){
   int flag = 0;
   
   flag = (file != NULL);
-  (flag) ? fwrite(std_ptr, size_of, 1, file):0;
+  (flag) ? fwrite(ptr, size_of, 1, file):0;
   
   fclose(file);
 
